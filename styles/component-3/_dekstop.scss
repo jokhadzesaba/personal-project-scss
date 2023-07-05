@@ -1,0 +1,112 @@
+@media screen and ($desktop) {
+  .component-3 {
+    justify-content: center;
+    height: 816px;
+    
+
+    > div {
+      align-items: center;
+      > .header {
+        margin-bottom: 93px;
+        margin-top: 114px;
+        > span {
+          @include text-styles(31px, $black, normal, "Raleway", bold);
+          > span {
+            color: $button-color;
+          }
+        }
+        > div {
+          align-items: center;
+          padding-left: 50px;
+          padding-top: 12px;
+          > div {
+            @include width-height(35px, 1px);
+            background-color: $grey;
+            margin-right: 10px;
+            margin-top: 4px;
+          }
+          > img {
+            margin-right: 10px;
+          }
+        }
+      }
+      > .img-and-text {
+        padding-left: 149px;
+        flex-direction: row;
+        gap: 90px;
+        >.image-placeholder{
+            padding-top: 5px;
+        }
+        > .text-container {
+          width: 725px;
+          > button {
+            display: none;
+          }
+          > p:first-of-type {
+            @include text-styles(31px, $black, -0.5px, "Raleway", bold);
+            margin-bottom: 22px;
+            padding-left: 2px;
+          }
+          > hr {
+            display: none;
+          }
+          > p:nth-of-type(2) {
+            @include text-styles(14px, $charcoal-gray, normal, "Open Sans");
+            padding-left: 4px;
+            line-height: 27px;
+            margin-bottom: 32px;
+            width: 590px;
+            >span{
+                display: none;
+            }
+          }
+          > p:nth-of-type(3) {
+            display: none;
+          }
+          > .list {
+            display: none;
+          }
+          > .grid-container {
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 1fr 1fr;
+            padding-left: 4px;
+            padding-top: 15px;
+            row-gap: 55px;
+            column-gap: 9px;
+            > .cell {
+              column-gap: 24px;
+              > div:first-child {
+                width: 63px;
+                height: 63px;
+                background-color: $dark-gray;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+
+              }
+              > div:last-child {
+                width: 200px;
+                > span:first-of-type {
+                  @include text-styles(
+                    18px,
+                    $dark-gray,
+                    normal,
+                    "Raleway",
+                    bold
+                  );
+                  margin-bottom: 10px;
+                  line-height: 25px;
+                  
+                }
+                > span:last-child {
+                  @include text-styles(13px, $gray2, normal, "Open Sans");
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

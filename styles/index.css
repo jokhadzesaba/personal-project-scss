@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.component-1 {
+  background-color: #0E0E0E;
+}
+.component-1 > div:first-child {
+  align-items: center;
+}
+
+@media screen and ((min-width: 1024px)) {
+  .component-1 {
+    height: 102.4px;
+    width: 1920px;
+  }
+  .component-1 > div:first-child {
+    width: 80%;
+    margin-left: 19.5%;
+  }
+  .component-1 > div:first-child > .image-placeholder {
+    align-items: center;
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-right: 20.2%;
+  }
+  .component-1 > div:first-child > .image-placeholder > div {
+    display: none;
+  }
+  .component-1 > div:first-child > .link-container {
+    width: 48%;
+    justify-content: space-between;
+    padding-bottom: 1px;
+  }
+  .component-1 > div:first-child > .link-container > a {
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
+@media screen and ((min-width: 768px) and (max-width: 1023px)) {
+  .component-1 {
+    justify-content: center;
+    height: 108px;
+  }
+  .component-1 > div:first-child {
+    justify-content: space-between;
+  }
+  .component-1 > div:first-child > .image-placeholder {
+    justify-content: space-between;
+    align-items: center;
+    width: 718px;
+  }
+  .component-1 > div:first-child > .image-placeholder > span {
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    font-family: "Raleway";
+    font-weight: normal;
+    line-height: 43px;
+  }
+  .component-1 > div:first-child > .image-placeholder > span > img:first-of-type {
+    width: 26.7px;
+  }
+  .component-1 > div:first-child > .image-placeholder > div {
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 39px;
+    background-color: #3AB6B2;
+    margin-right: 1px;
+  }
+  .component-1 > div:first-child > .image-placeholder > div > div {
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    width: 52px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-1 > div:first-child > .image-placeholder > div > div > .line-container {
+    height: 12px;
+    justify-content: space-between;
+  }
+  .component-1 > div:first-child > .image-placeholder > div > div > .line-container > div {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .component-1 > div:first-child > .link-container {
+    display: none;
+  }
+}
+@media screen and ((min-width: 320px) and (max-width: 767px)) {
+  .component-1 {
+    justify-content: center;
+    background-color: #0E0E0E;
+    height: 67px;
+  }
+  .component-1 > div:first-child {
+    justify-content: space-between;
+  }
+  .component-1 > div:first-child > .image-placeholder {
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+  }
+  .component-1 > div:first-child > .image-placeholder > span {
+    font-size: 27.2px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    font-family: "Raleway";
+    font-weight: normal;
+  }
+  .component-1 > div:first-child > .image-placeholder > span > img:first-of-type {
+    width: 20px;
+  }
+  .component-1 > div:first-child > .image-placeholder > div {
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 31px;
+    background-color: #3AB6B2;
+  }
+  .component-1 > div:first-child > .image-placeholder > div > div {
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    width: 44px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-1 > div:first-child > .image-placeholder > div > div > .line-container {
+    height: 12px;
+    justify-content: space-between;
+  }
+  .component-1 > div:first-child > .image-placeholder > div > div > .line-container > div {
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .component-1 > div:first-child > .link-container {
+    display: none;
+  }
+}
+@media screen and ((min-width: 1024px)) {
+  .component-2 {
+    background-color: #292929;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    height: 758px;
+  }
+  .component-2 > div {
+    height: 259px;
+  }
+  .component-2 > div > .text-container {
+    text-align: center;
+    align-items: center;
+  }
+  .component-2 > div > .text-container > span:first-of-type {
+    font-size: 62px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: 100;
+    line-height: 50px;
+    padding-left: 15px;
+  }
+  .component-2 > div > .text-container > span:nth-of-type(2) {
+    font-size: 71.7px;
+    color: #ffffff;
+    letter-spacing: -2px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    padding-left: 10px;
+    margin-bottom: 11px;
+  }
+  .component-2 > div > .text-container > span:last-of-type {
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: -0.2px;
+    font-family: "Raleway";
+    font-weight: normal;
+    width: 860px;
+    margin-bottom: 36px;
+    padding-left: 15px;
+  }
+  .component-2 > div > .text-container > div {
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 44px;
+    background-color: #3AB6B2;
+    margin-right: 0px;
+    margin-left: 22px;
+  }
+  .component-2 > div > .text-container > div > button {
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    width: 138px;
+    height: 38px;
+    font-size: 13px;
+    font-family: "Raleway" sans-serif;
+    padding-left: 0px;
+  }
+}
+@media screen and ((min-width: 768px) and (max-width: 1023px)) {
+  .component-2 {
+    background-color: #292929;
+    justify-content: center;
+    align-items: center;
+    height: 592px;
+  }
+  .component-2 > div {
+    height: 266px;
+  }
+  .component-2 > div > .text-container {
+    text-align: center;
+    align-items: center;
+  }
+  .component-2 > div > .text-container > span:first-of-type {
+    font-size: 58.8px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+    line-height: 50px;
+    padding-right: 1px;
+  }
+  .component-2 > div > .text-container > span:nth-of-type(2) {
+    font-size: 71.7px;
+    color: #ffffff;
+    letter-spacing: -2px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    padding-right: 4px;
+    margin-bottom: 6px;
+  }
+  .component-2 > div > .text-container > span:last-of-type {
+    font-size: 18.9px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+    width: 700px;
+    margin-bottom: 36px;
+    padding-right: 6px;
+  }
+  .component-2 > div > .text-container > div {
+    justify-content: center;
+    align-items: center;
+    width: 144px;
+    height: 44px;
+    background-color: #3AB6B2;
+    margin-right: 6px;
+    margin-left: 0px;
+  }
+  .component-2 > div > .text-container > div > button {
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    width: 138px;
+    height: 38px;
+    font-size: 13px;
+    font-family: "Raleway" sans-serif;
+    padding-left: 0px;
+  }
+}
+@media screen and ((min-width: 320px) and (max-width: 767px)) {
+  .component-2 {
+    background-color: #292929;
+    justify-content: center;
+    height: 212.4px;
+  }
+  .component-2 > div {
+    height: 206px;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-2 > div > .text-container {
+    text-align: center;
+    align-items: center;
+  }
+  .component-2 > div > .text-container > span:first-of-type {
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: -1.4px;
+    font-family: "Raleway";
+    font-weight: normal;
+    padding-right: 4px;
+    line-height: 20px;
+  }
+  .component-2 > div > .text-container > span:nth-of-type(2) {
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: -1.2px;
+    font-family: "Montserrat";
+    font-weight: normal;
+    padding-right: 10px;
+    margin-bottom: 2px;
+  }
+  .component-2 > div > .text-container > span:last-of-type {
+    font-size: 9px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-bottom: 16px;
+  }
+  .component-2 > div > .text-container > span:last-of-type > span {
+    display: none;
+  }
+  .component-2 > div > .text-container > div {
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 19px;
+    background-color: #3AB6B2;
+    margin-right: 2px;
+    margin-left: 0px;
+  }
+  .component-2 > div > .text-container > div > button {
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    width: 60px;
+    height: 15px;
+    font-size: 7px;
+    font-family: "Raleway" sans-serif;
+    padding-left: 5px;
+  }
+}
+@media screen and ((min-width: 1024px)) {
+  .component-3 {
+    justify-content: center;
+    height: 816px;
+  }
+  .component-3 > div {
+    align-items: center;
+  }
+  .component-3 > div > .header {
+    margin-bottom: 93px;
+    margin-top: 114px;
+  }
+  .component-3 > div > .header > span {
+    font-size: 31px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-3 > div > .header > span > span {
+    color: #3AB6B2;
+  }
+  .component-3 > div > .header > div {
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 12px;
+  }
+  .component-3 > div > .header > div > div {
+    width: 35px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  .component-3 > div > .header > div > img {
+    margin-right: 10px;
+  }
+  .component-3 > div > .img-and-text {
+    padding-left: 149px;
+    flex-direction: row;
+    gap: 90px;
+  }
+  .component-3 > div > .img-and-text > .image-placeholder {
+    padding-top: 5px;
+  }
+  .component-3 > div > .img-and-text > .text-container {
+    width: 725px;
+  }
+  .component-3 > div > .img-and-text > .text-container > button {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:first-of-type {
+    font-size: 31px;
+    color: #0E0E0E;
+    letter-spacing: -0.5px;
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-bottom: 22px;
+    padding-left: 2px;
+  }
+  .component-3 > div > .img-and-text > .text-container > hr {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(2) {
+    font-size: 14px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+    padding-left: 4px;
+    line-height: 27px;
+    margin-bottom: 32px;
+    width: 590px;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(2) > span {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(3) {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > .grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 4px;
+    padding-top: 15px;
+    row-gap: 55px;
+    column-gap: 9px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .grid-container > .cell {
+    column-gap: 24px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .grid-container > .cell > div:first-child {
+    width: 63px;
+    height: 63px;
+    background-color: #3B3B3B;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-3 > div > .img-and-text > .text-container > .grid-container > .cell > div:last-child {
+    width: 200px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .grid-container > .cell > div:last-child > span:first-of-type {
+    font-size: 18px;
+    color: #3B3B3B;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .grid-container > .cell > div:last-child > span:last-child {
+    font-size: 13px;
+    color: #6A6A6A;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+  }
+}
+@media screen and ((min-width: 768px) and (max-width: 1023px)) {
+  .component-3 {
+    justify-content: center;
+    height: 1146px;
+  }
+  .component-3 > div {
+    align-items: center;
+  }
+  .component-3 > div > .header {
+    margin-bottom: 57px;
+    margin-top: 73px;
+  }
+  .component-3 > div > .header > span {
+    font-size: 28.8px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-3 > div > .header > span > span {
+    color: #3AB6B2;
+  }
+  .component-3 > div > .header > div {
+    align-items: center;
+    padding-left: 42px;
+    padding-top: 12px;
+  }
+  .component-3 > div > .header > div > div {
+    width: 35px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  .component-3 > div > .header > div > img {
+    margin-right: 10px;
+  }
+  .component-3 > div > .img-and-text {
+    align-items: center;
+  }
+  .component-3 > div > .img-and-text > .image-placeholder {
+    width: 718px;
+    height: 421px;
+    background-color: #0E0E0E;
+    margin-bottom: 28px;
+    margin-right: 2px;
+  }
+  .component-3 > div > .img-and-text > .image-placeholder > img {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container {
+    width: 725px;
+  }
+  .component-3 > div > .img-and-text > .text-container > button {
+    width: 138px;
+    height: 42px;
+    font-size: 13px;
+    font-family: "Raleway";
+    margin-left: 3px;
+    margin-top: 40px;
+    border: none;
+    background-color: #3AB6B2;
+    color: #ffffff;
+    padding-right: 2px;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:first-of-type {
+    font-size: 25px;
+    color: #0E0E0E;
+    letter-spacing: -0.5px;
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-bottom: 17px;
+    padding-left: 2px;
+  }
+  .component-3 > div > .img-and-text > .text-container > hr {
+    margin-bottom: 16px;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(2) {
+    font-size: 13px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+    padding-left: 4px;
+    line-height: 23px;
+    margin-bottom: 35px;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(3) {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list .check-icons {
+    padding-left: 3px;
+    padding-top: 6px;
+    row-gap: 45.4px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list > .list-text {
+    padding-left: 15px;
+    row-gap: 18px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list > .list-text > p:nth-child(even) {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list > .list-text > p {
+    font-size: 13px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+    line-height: 24px;
+    width: 520px;
+  }
+}
+@media screen and ((min-width: 320px) and (max-width: 767px)) {
+  .component-3 {
+    justify-content: center;
+    height: 798px;
+  }
+  .component-3 > div {
+    align-items: center;
+  }
+  .component-3 > div > .header {
+    margin-bottom: 36px;
+    margin-top: 37px;
+  }
+  .component-3 > div > .header > span {
+    font-size: 27px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-3 > div > .header > span > span {
+    color: #3AB6B2;
+  }
+  .component-3 > div > .header > div {
+    align-items: center;
+    padding-left: 39px;
+    padding-top: 10px;
+  }
+  .component-3 > div > .header > div > div {
+    width: 33px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  .component-3 > div > .header > div > img {
+    margin-right: 6px;
+  }
+  .component-3 > div > .img-and-text {
+    align-items: center;
+  }
+  .component-3 > div > .img-and-text > .image-placeholder {
+    width: 280px;
+    height: 207px;
+    background-color: #0E0E0E;
+    margin-bottom: 18px;
+  }
+  .component-3 > div > .img-and-text > .image-placeholder > img {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container {
+    width: 288px;
+  }
+  .component-3 > div > .img-and-text > .text-container > button {
+    width: 138px;
+    height: 42px;
+    font-size: 13px;
+    font-family: "Raleway";
+    margin-left: 4px;
+    margin-top: 40px;
+    border: none;
+    background-color: #3AB6B2;
+    color: #ffffff;
+    padding-right: 2px;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:first-of-type {
+    font-size: 16px;
+    color: #0E0E0E;
+    letter-spacing: -0.2px;
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 2px;
+  }
+  .component-3 > div > .img-and-text > .text-container > hr {
+    margin-bottom: 10px;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(2) {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > p:nth-of-type(3) {
+    font-size: 13px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+    padding-left: 4px;
+    line-height: 23px;
+    margin-bottom: 31px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list .check-icons {
+    padding-left: 4px;
+    padding-top: 6px;
+    row-gap: 45.1px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list > .list-text {
+    padding-left: 15px;
+    row-gap: 18px;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list > .list-text > p:nth-child(odd) {
+    display: none;
+  }
+  .component-3 > div > .img-and-text > .text-container > .list > .list-text > p {
+    font-size: 13px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Open Sans";
+    font-weight: normal;
+    line-height: 24px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

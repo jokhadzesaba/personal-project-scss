@@ -1,0 +1,49 @@
+@media screen and ($mobile) {
+  .component-1 {
+    justify-content: center;
+    background-color: $bg-color-black;
+    height: 67px;
+    > div:first-child {
+      justify-content: space-between;
+      > .image-placeholder {
+        justify-content: space-between;
+        align-items: center;
+        width: 280px;
+        > span {
+          @include text-styles(27.2px, $white, 0.3px, "Raleway");
+          > img:first-of-type {
+            width: 20px;
+          }
+        }
+        > div {
+          justify-content: center;
+          align-items: center;
+          @include width-height(48px, 31px);
+          background-color: $button-color;
+          
+
+          > div {
+            background-color: inherit;
+            border: 1px solid $white;
+            @include width-height(44px, 27px);
+            justify-content: center;
+            align-items: center;
+            
+            > .line-container {
+              height: 12px;
+              justify-content: space-between;
+              > div {
+                @include width-height(22px, 2px);
+                background-color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      > .link-container {
+        display: none;
+      }
+    }
+  }
+}

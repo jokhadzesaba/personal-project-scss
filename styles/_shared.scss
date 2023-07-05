@@ -1,0 +1,43 @@
+@mixin width-height($width, $heigh) {
+  width: $width;
+  height: $heigh;
+}
+@mixin text-styles(
+  $font-size: 16px,
+  $color: black,
+  $letter-spacing: normal,
+  $font-family: "sans-serif",
+  $font-weight: normal
+) {
+  font-size: $font-size;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+
+@mixin button($width,$height, $margin-rigth:0px,$margin-left:0px) {
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  background-color: $button-color;
+  margin-right: $margin-rigth;
+  margin-left: $margin-left;
+}
+@mixin inisde-button($width,$height,$font-size,$padding-left:0px,$padding-rigth:0px) {
+    background-color: inherit;
+    border: 1px solid $white;
+    color: $white;
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    font-family: 'Raleway' sans-serif;
+    padding-left: $padding-left;
+}
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}

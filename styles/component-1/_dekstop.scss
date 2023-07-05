@@ -1,0 +1,27 @@
+@media screen and ($desktop) {
+  .component-1 {
+    height: 102.4px;
+    width: 1920px;
+    > div:first-child {
+      width: 80%;
+      margin-left: 19.5%;
+      > .image-placeholder {
+        align-items: center;
+        @include text-styles(36px, $white, 0.3px, "Raleway");
+        margin-right: 20.2%;
+        > div {
+          display: none;
+        }
+      }
+      > .link-container {
+        width: 48%;
+        justify-content: space-between;
+        padding-bottom: 1px;
+        > a {
+          @include text-styles(14px, $white, normal, "Open Sans");
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

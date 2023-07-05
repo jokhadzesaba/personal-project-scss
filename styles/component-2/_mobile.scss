@@ -1,0 +1,41 @@
+@media screen and ($mobile) {
+  .component-2 {
+    background-color: $bg-color-darkgray;
+    justify-content: center;
+    height: 212.4px;
+    > div {
+        height: 206px;
+        justify-content: center;
+        align-items: center;
+
+      > .text-container {
+        text-align: center;
+        align-items: center;
+        >span:first-of-type{
+            @include text-styles(28px, $white, -1.4px, "Raleway");
+            padding-right: 4px;
+            line-height: 20px;
+        }
+        >span:nth-of-type(2){
+          @include text-styles(30px, $white, -1.2px, "Montserrat");
+            padding-right: 10px;
+            margin-bottom: 2px;
+        }
+        >span:last-of-type{
+          @include text-styles(9px, $white, normal, "Raleway");
+            margin-bottom: 16px;
+            >span{
+              display: none;
+            }
+        }
+        >div{
+          @include button(64px, 19px, 2px);
+            >button{
+              @include inisde-button(60px,15px,7px,5px);
+
+            }
+        }
+      }
+    }
+  }
+}

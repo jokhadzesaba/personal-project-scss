@@ -1,0 +1,98 @@
+@media screen and ($tablet) {
+  .component-3 {
+    justify-content: center;
+    height: 1146px;
+    
+    > div {
+      align-items: center;
+      > .header {
+        margin-bottom: 57px;
+        margin-top: 73px;
+        > span {
+          @include text-styles(28.8px, $black, normal, "Raleway", bold);
+          > span {
+            color: $button-color;
+          }
+        }
+        > div {
+          align-items: center;
+          padding-left: 42px;
+          padding-top: 12px;
+          > div {
+            @include width-height(35px, 1px);
+            background-color: $grey;
+            margin-right: 10px;
+            margin-top: 4px;
+          }
+          > img {
+            margin-right: 10px;
+          }
+        }
+      }
+      > .img-and-text {
+        align-items: center;
+        > .image-placeholder {
+          width: 718px;
+          height: 421px;
+          background-color: $black;
+          margin-bottom: 28px;
+          margin-right: 2px;
+          >img{
+            display: none;
+          }
+        }
+        > .text-container {
+          width: 725px;
+          > button {
+            width: 138px;
+            height: 42px;
+            font-size: 13px;
+            font-family: "Raleway";
+            margin-left: 3px;
+            margin-top: 40px;
+            border: none;
+            background-color: $button-color;
+            color: $white;
+            padding-right: 2px;
+          }
+          > p:first-of-type {
+            @include text-styles(25px, $black, -0.5px, "Raleway");
+            margin-bottom: 17px;
+            padding-left: 2px;
+          }
+          > hr {
+            margin-bottom: 16px;
+          }
+          > p:nth-of-type(2) {
+            @include text-styles(13px, $charcoal-gray, normal, "Open Sans");
+            padding-left: 4px;
+            line-height: 23px;
+            margin-bottom: 35px;
+          }
+          >p:nth-of-type(3){
+            display: none;
+          }
+          > .list {
+            .check-icons {
+              padding-left: 3px;
+              padding-top: 6px;
+              row-gap: 45.4px;
+            }
+            > .list-text {
+              padding-left: 15px;
+              row-gap: 18px;
+              >p:nth-child(even){
+                display: none
+              }
+              > p {
+                @include text-styles(13px, $charcoal-gray, normal, "Open Sans");
+                line-height: 24px;
+                width: 520px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

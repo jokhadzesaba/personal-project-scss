@@ -1,0 +1,37 @@
+@media screen and ($tablet) {
+  .component-2 {
+    background-color: $bg-color-darkgray;
+    justify-content: center;
+    align-items: center;
+    height: 592px;
+    > div {
+      height: 266px;
+      > .text-container {
+        text-align: center;
+        align-items: center;
+        > span:first-of-type {
+          @include text-styles(58.8px, $white, normal, "Raleway");
+          line-height: 50px;
+          padding-right: 1px;
+        }
+        > span:nth-of-type(2) {
+          @include text-styles(71.7px, $white, -2px, "Montserrat");
+          padding-right: 4px;
+          margin-bottom: 6px;
+        }
+        > span:last-of-type {
+          @include text-styles(18.9px, $white, normal, "Raleway");
+          width: 700px;
+          margin-bottom: 36px;
+          padding-right: 6px;
+        }
+        > div {
+          @include button(144px, 44px, 6px);
+          > button {
+            @include inisde-button(138px, 38px, 13px);
+          }
+        }
+      }
+    }
+  }
+}
