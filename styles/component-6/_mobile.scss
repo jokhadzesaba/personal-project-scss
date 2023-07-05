@@ -1,0 +1,83 @@
+@media screen and ($mobile) {
+  .component-6 {
+    justify-content: center;
+    height: 902px;
+    
+    > div {
+      align-items: center;
+
+      > .header {
+        margin-bottom: 46px;
+        margin-top: 27px;
+
+        > span {
+          @include text-styles(27px, $black, normal, "Raleway", bold);
+        }
+        > div {
+          align-items: center;
+          padding-left: 12px;
+          padding-top: 10px;
+          > div {
+            @include width-height(33px, 1px);
+            background-color: $grey;
+            margin-right: 9px;
+            margin-top: 2px;
+          }
+          > img {
+            margin-right: 7px;
+          }
+        }
+      }
+      > .info-container {
+        row-gap: 36px;
+        > .info {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          > p {
+            @include text-styles(15px, $charcoal-gray, 0.6px, "Raleway");
+            line-height: 24px;
+            width: 150px;
+            margin-top: 15px;
+          }
+        }
+        > .info:nth-of-type(2) {
+          > p {
+            margin-top: 21px;
+          }
+        }
+      }
+      > .message {
+        display: grid;
+        grid-template-columns: 280px;
+        grid-template-rows: repeat(3, 46px) 141px;
+        row-gap: 10px;
+        margin-bottom: 12px;
+        > input {
+          border: 1px solid $border-color;
+          &::placeholder {
+            @include text-styles(14px, $charcoal-gray, normal, "Raleway");
+            padding-left: 8px;
+          }
+        }
+        > input:last-of-type {
+          position: relative;
+          &::placeholder {
+            position: absolute;
+            top: 12px;
+          }
+        }
+      }
+      >button{
+        width: 160px;
+        height: 42px;
+        border: none;
+        background-color: $button-color;
+        @include text-styles(13px, $white, normal,"Raleway",bold);
+        align-self: flex-start;
+        margin-left: 19px;
+      }
+    }
+    
+  }
+}

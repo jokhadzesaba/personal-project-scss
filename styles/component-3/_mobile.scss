@@ -1,7 +1,7 @@
 @media screen and ($mobile) {
   .component-3 {
     justify-content: center;
-    height: 798px;
+    height: 799px;
     > div {
       align-items: center;
       > .header {
@@ -53,6 +53,9 @@
             background-color: $button-color;
             color: $white;
             padding-right: 2px;
+          }
+          >.grid-container{
+            display: none;
           }
           > p:first-of-type {
             @include text-styles(16px, $black, -0.2px, "Raleway");

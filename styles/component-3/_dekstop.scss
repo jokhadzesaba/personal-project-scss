@@ -2,13 +2,13 @@
   .component-3 {
     justify-content: center;
     height: 816px;
-    
+    width: 100%;
 
     > div {
       align-items: center;
       > .header {
         margin-bottom: 93px;
-        margin-top: 114px;
+        margin-top: 113px;
         > span {
           @include text-styles(31px, $black, normal, "Raleway", bold);
           > span {
@@ -72,10 +72,10 @@
             grid-template-rows: 1fr 1fr;
             padding-left: 4px;
             padding-top: 15px;
-            row-gap: 55px;
+            row-gap: 54px;
             column-gap: 9px;
             > .cell {
-              column-gap: 24px;
+              column-gap: 25px;
               > div:first-child {
                 width: 63px;
                 height: 63px;
@@ -91,7 +91,7 @@
                   @include text-styles(
                     18px,
                     $dark-gray,
-                    normal,
+                    -0.1px,
                     "Raleway",
                     bold
                   );
@@ -101,6 +101,7 @@
                 }
                 > span:last-child {
                   @include text-styles(13px, $gray2, normal, "Open Sans");
+                  padding-left: 4px;
                 }
               }
             }

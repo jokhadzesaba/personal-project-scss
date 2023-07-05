@@ -1,0 +1,97 @@
+@media screen and ($mobile) {
+  .component-5 {
+    justify-content: center;
+    height: 820px;
+    > div {
+      align-items: center;
+
+      > .header {
+        margin-bottom: 35px;
+        margin-top: 37px;
+
+        > span {
+          @include text-styles(27px, $black, normal, "Raleway", bold);
+        }
+        > div {
+          align-items: center;
+          padding-left: 26px;
+          padding-top: 10px;
+          > div {
+            @include width-height(33px, 1px);
+            background-color: $grey;
+            margin-right: 7px;
+            margin-top: 2px;
+          }
+          > img {
+            margin-right: 7px;
+          }
+        }
+      }
+      > .grid-container {
+        display: grid;
+        margin-right: 2px;
+        grid-template-rows: repeat(4, 163px);
+        grid-template-columns: 280px;
+        row-gap: 7px;
+        > div {
+            background-color: $black;
+            &:hover{
+                >div:first-child{
+                    display: flex;
+                    >.icon-container{
+                        >div:hover{
+                            background-color: inherit;
+                            border: 2px solid $button-color;
+                        }
+                    }
+                }
+                >.text-container{
+                    display: flex;
+                }
+            }
+          > div:first-child {
+            display: none;
+            height: 109px;
+            justify-content: center;
+            align-items: center;
+            background-color: $grey3;
+            .icon-container {
+              gap: 6px;
+              > div {
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                background-color: $button-color;
+                justify-content: center;
+                align-items: center;
+                margin-top: 4px;
+              }
+              > div:nth-child(even) {
+                display: none;
+              }
+            }
+          }
+          > .text-container {
+            display: none;
+            height: 54px;
+            background-color: $black;
+            justify-content: center;
+            align-items: center;
+            > div {
+              text-align: center;
+              > p:first-of-type {
+                @include text-styles(14px, $white, normal, "Raleway", bold);
+                margin-bottom: 4px;
+              }
+              > p:last-of-type {
+                @include text-styles(11px, $button-color, 0.2px, "Raleway");
+                font-style: italic;
+                padding-left: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

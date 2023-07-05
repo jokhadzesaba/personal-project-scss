@@ -3,8 +3,9 @@
     background-color: $bg-color-darkgray;
     justify-content: center;
     align-items: center;
-    width: 1920px;
-    height: 758px;
+    height: 759px;
+    width: 100%;
+    
     > div {
       height: 259px;
       > .text-container {
@@ -12,22 +13,22 @@
         align-items: center;
         > span:first-of-type {
           @include text-styles(62px, $white, normal, "Raleway", 100);
-          line-height: 50px;
-          padding-left: 15px;
+          line-height: 52px;
+          padding-left: 24px;
         }
         > span:nth-of-type(2) {
           @include text-styles(71.7px, $white, -2px, "Montserrat");
           padding-left: 10px;
-          margin-bottom: 11px;
+          margin-bottom: 6px;
         }
         > span:last-of-type {
           @include text-styles(20px, $white, -0.2px, "Raleway");
           width: 860px;
-          margin-bottom: 36px;
+          margin-bottom: 40px;
           padding-left: 15px;
         }
         > div {
-          @include button(144px, 44px, 0px, 22px);
+          @include button(144px, 44px, 0px, 24px);
 
           > button {
             @include inisde-button(138px, 38px, 13px);

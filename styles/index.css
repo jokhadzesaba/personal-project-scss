@@ -12,6 +12,10 @@
   flex-direction: column;
 }
 
+.container {
+  width: 100%;
+}
+
 .component-1 {
   background-color: #0E0E0E;
 }
@@ -22,11 +26,10 @@
 @media screen and ((min-width: 1024px)) {
   .component-1 {
     height: 102.4px;
-    width: 1920px;
+    width: 100%;
   }
   .component-1 > div:first-child {
-    width: 80%;
-    margin-left: 19.5%;
+    width: 61%;
   }
   .component-1 > div:first-child > .image-placeholder {
     align-items: center;
@@ -35,14 +38,16 @@
     letter-spacing: 0.3px;
     font-family: "Raleway";
     font-weight: normal;
-    margin-right: 20.2%;
+    margin-right: 19.8%;
+  }
+  .component-1 > div:first-child > .image-placeholder > span {
+    width: 200px;
   }
   .component-1 > div:first-child > .image-placeholder > div {
     display: none;
   }
   .component-1 > div:first-child > .link-container {
-    width: 48%;
-    justify-content: space-between;
+    column-gap: 8.7%;
     padding-bottom: 1px;
   }
   .component-1 > div:first-child > .link-container > a {
@@ -164,8 +169,8 @@
     background-color: #292929;
     justify-content: center;
     align-items: center;
-    width: 1920px;
-    height: 758px;
+    height: 759px;
+    width: 100%;
   }
   .component-2 > div {
     height: 259px;
@@ -180,8 +185,8 @@
     letter-spacing: normal;
     font-family: "Raleway";
     font-weight: 100;
-    line-height: 50px;
-    padding-left: 15px;
+    line-height: 52px;
+    padding-left: 24px;
   }
   .component-2 > div > .text-container > span:nth-of-type(2) {
     font-size: 71.7px;
@@ -190,7 +195,7 @@
     font-family: "Montserrat";
     font-weight: normal;
     padding-left: 10px;
-    margin-bottom: 11px;
+    margin-bottom: 6px;
   }
   .component-2 > div > .text-container > span:last-of-type {
     font-size: 20px;
@@ -199,7 +204,7 @@
     font-family: "Raleway";
     font-weight: normal;
     width: 860px;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
     padding-left: 15px;
   }
   .component-2 > div > .text-container > div {
@@ -209,7 +214,7 @@
     height: 44px;
     background-color: #3AB6B2;
     margin-right: 0px;
-    margin-left: 22px;
+    margin-left: 24px;
   }
   .component-2 > div > .text-container > div > button {
     background-color: inherit;
@@ -352,13 +357,14 @@
   .component-3 {
     justify-content: center;
     height: 816px;
+    width: 100%;
   }
   .component-3 > div {
     align-items: center;
   }
   .component-3 > div > .header {
     margin-bottom: 93px;
-    margin-top: 114px;
+    margin-top: 113px;
   }
   .component-3 > div > .header > span {
     font-size: 31px;
@@ -437,11 +443,11 @@
     grid-template-rows: 1fr 1fr;
     padding-left: 4px;
     padding-top: 15px;
-    row-gap: 55px;
+    row-gap: 54px;
     column-gap: 9px;
   }
   .component-3 > div > .img-and-text > .text-container > .grid-container > .cell {
-    column-gap: 24px;
+    column-gap: 25px;
   }
   .component-3 > div > .img-and-text > .text-container > .grid-container > .cell > div:first-child {
     width: 63px;
@@ -457,7 +463,7 @@
   .component-3 > div > .img-and-text > .text-container > .grid-container > .cell > div:last-child > span:first-of-type {
     font-size: 18px;
     color: #3B3B3B;
-    letter-spacing: normal;
+    letter-spacing: -0.1px;
     font-family: "Raleway";
     font-weight: bold;
     margin-bottom: 10px;
@@ -469,6 +475,7 @@
     letter-spacing: normal;
     font-family: "Open Sans";
     font-weight: normal;
+    padding-left: 4px;
   }
 }
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
@@ -586,7 +593,7 @@
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-3 {
     justify-content: center;
-    height: 798px;
+    height: 799px;
   }
   .component-3 > div {
     align-items: center;
@@ -647,6 +654,9 @@
     color: #ffffff;
     padding-right: 2px;
   }
+  .component-3 > div > .img-and-text > .text-container > .grid-container {
+    display: none;
+  }
   .component-3 > div > .img-and-text > .text-container > p:first-of-type {
     font-size: 16px;
     color: #0E0E0E;
@@ -691,6 +701,376 @@
     font-family: "Open Sans";
     font-weight: normal;
     line-height: 24px;
+  }
+}
+@media screen and ((min-width: 320px) and (max-width: 767px)) {
+  .component-4 {
+    justify-content: center;
+    background-color: #0E0E0E;
+    height: 1108px;
+  }
+  .component-4 > div {
+    align-items: center;
+  }
+  .component-4 > div > .header {
+    margin-bottom: 56px;
+    margin-top: 37px;
+  }
+  .component-4 > div > .header > span {
+    font-size: 27px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+  }
+  .component-4 > div > .header > div {
+    align-items: center;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .component-4 > div > .header > div > div {
+    width: 37px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  .component-4 > div > .header > div > img {
+    margin-right: 8px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box {
+    align-items: center;
+    text-align: center;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon {
+    position: relative;
+    width: 118px;
+    height: 137px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 41px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon:hover > .hover-hex {
+    position: absolute;
+    width: 118px;
+    height: 137px;
+    background-color: #3AB6B2;
+    z-index: 1;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: inline;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon:hover .line:nth-child(even) {
+    display: inline;
+    z-index: 3;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .image-placeholder {
+    z-index: 2;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .hover-hex {
+    display: none;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line {
+    width: 68px;
+    background-color: #ffffff;
+    height: 2px;
+    position: absolute;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-child(even) {
+    display: none;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .inside {
+    width: 60px;
+    background-color: white;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-of-type(3) {
+    transform: rotate(90deg);
+    left: -33px;
+    top: 68px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-of-type(4) {
+    transform: rotate(90deg);
+    left: -23px;
+    top: 68px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-of-type(5) {
+    transform: rotate(150deg);
+    left: -4px;
+    top: 18px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-of-type(6) {
+    transform: rotate(150deg);
+    left: 3px;
+    top: 23px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-of-type(7) {
+    transform: rotate(30deg);
+    left: 54px;
+    top: 17px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon > .line:nth-of-type(8) {
+    transform: rotate(30deg);
+    left: 55px;
+    top: 23px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon .line:nth-of-type(9) {
+    transform: rotate(90deg);
+    left: 83px;
+    top: 68px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon .line:nth-of-type(10) {
+    transform: rotate(90deg);
+    left: 81px;
+    top: 68px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon .line:nth-of-type(11) {
+    transform: rotate(-30deg);
+    left: 54px;
+    top: 118px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon .line:nth-of-type(12) {
+    transform: rotate(-30deg);
+    left: 55px;
+    top: 112px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon .line:nth-of-type(13) {
+    transform: rotate(30deg);
+    left: -4px;
+    top: 118px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .hexagon .line:nth-of-type(14) {
+    transform: rotate(30deg);
+    left: 3px;
+    top: 113px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .text-container > p:first-of-type {
+    font-size: 19px;
+    color: #3AB6B2;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+    margin-bottom: 12px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box > .text-container > p:last-of-type {
+    font-size: 12.9px;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    line-height: 20.8px;
+    width: 274px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box:nth-of-type(2) {
+    margin-top: 42px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box:nth-of-type(2) > .text-container > p:first-of-type {
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box:nth-of-type(3) {
+    margin-top: 44px;
+  }
+  .component-4 > div > .hexagon-boxes > .single-box:nth-of-type(3) > .text-container > p:first-of-type {
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and ((min-width: 320px) and (max-width: 767px)) {
+  .component-5 {
+    justify-content: center;
+    height: 820px;
+  }
+  .component-5 > div {
+    align-items: center;
+  }
+  .component-5 > div > .header {
+    margin-bottom: 35px;
+    margin-top: 37px;
+  }
+  .component-5 > div > .header > span {
+    font-size: 27px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-5 > div > .header > div {
+    align-items: center;
+    padding-left: 26px;
+    padding-top: 10px;
+  }
+  .component-5 > div > .header > div > div {
+    width: 33px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 7px;
+    margin-top: 2px;
+  }
+  .component-5 > div > .header > div > img {
+    margin-right: 7px;
+  }
+  .component-5 > div > .grid-container {
+    display: grid;
+    margin-right: 2px;
+    grid-template-rows: repeat(4, 163px);
+    grid-template-columns: 280px;
+    row-gap: 7px;
+  }
+  .component-5 > div > .grid-container > div {
+    background-color: #0E0E0E;
+  }
+  .component-5 > div > .grid-container > div:hover > div:first-child {
+    display: flex;
+  }
+  .component-5 > div > .grid-container > div:hover > div:first-child > .icon-container > div:hover {
+    background-color: inherit;
+    border: 2px solid #3AB6B2;
+  }
+  .component-5 > div > .grid-container > div:hover > .text-container {
+    display: flex;
+  }
+  .component-5 > div > .grid-container > div > div:first-child {
+    display: none;
+    height: 109px;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+  }
+  .component-5 > div > .grid-container > div > div:first-child .icon-container {
+    gap: 6px;
+  }
+  .component-5 > div > .grid-container > div > div:first-child .icon-container > div {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #3AB6B2;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .component-5 > div > .grid-container > div > div:first-child .icon-container > div:nth-child(even) {
+    display: none;
+  }
+  .component-5 > div > .grid-container > div > .text-container {
+    display: none;
+    height: 54px;
+    background-color: #0E0E0E;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-5 > div > .grid-container > div > .text-container > div {
+    text-align: center;
+  }
+  .component-5 > div > .grid-container > div > .text-container > div > p:first-of-type {
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .component-5 > div > .grid-container > div > .text-container > div > p:last-of-type {
+    font-size: 11px;
+    color: #3AB6B2;
+    letter-spacing: 0.2px;
+    font-family: "Raleway";
+    font-weight: normal;
+    font-style: italic;
+    padding-left: 2px;
+  }
+}
+@media screen and ((min-width: 320px) and (max-width: 767px)) {
+  .component-6 {
+    justify-content: center;
+    height: 902px;
+  }
+  .component-6 > div {
+    align-items: center;
+  }
+  .component-6 > div > .header {
+    margin-bottom: 46px;
+    margin-top: 27px;
+  }
+  .component-6 > div > .header > span {
+    font-size: 27px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-6 > div > .header > div {
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 10px;
+  }
+  .component-6 > div > .header > div > div {
+    width: 33px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 9px;
+    margin-top: 2px;
+  }
+  .component-6 > div > .header > div > img {
+    margin-right: 7px;
+  }
+  .component-6 > div > .info-container {
+    row-gap: 36px;
+  }
+  .component-6 > div > .info-container > .info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .component-6 > div > .info-container > .info > p {
+    font-size: 15px;
+    color: #525252;
+    letter-spacing: 0.6px;
+    font-family: "Raleway";
+    font-weight: normal;
+    line-height: 24px;
+    width: 150px;
+    margin-top: 15px;
+  }
+  .component-6 > div > .info-container > .info:nth-of-type(2) > p {
+    margin-top: 21px;
+  }
+  .component-6 > div > .message {
+    display: grid;
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(3, 46px) 141px;
+    row-gap: 10px;
+    margin-bottom: 12px;
+  }
+  .component-6 > div > .message > input {
+    border: 1px solid #D4D4D4;
+  }
+  .component-6 > div > .message > input::placeholder {
+    font-size: 14px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+    padding-left: 8px;
+  }
+  .component-6 > div > .message > input:last-of-type {
+    position: relative;
+  }
+  .component-6 > div > .message > input:last-of-type::placeholder {
+    position: absolute;
+    top: 12px;
+  }
+  .component-6 > div > button {
+    width: 160px;
+    height: 42px;
+    border: none;
+    background-color: #3AB6B2;
+    font-size: 13px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 19px;
   }
 }
 
