@@ -2,6 +2,7 @@
   .component-3 {
     justify-content: center;
     height: 1146px;
+
     
     > div {
       align-items: center;
@@ -59,6 +60,9 @@
             @include text-styles(25px, $black, -0.5px, "Raleway");
             margin-bottom: 17px;
             padding-left: 2px;
+          }
+          >.grid-container{
+            display: none;
           }
           > hr {
             margin-bottom: 16px;

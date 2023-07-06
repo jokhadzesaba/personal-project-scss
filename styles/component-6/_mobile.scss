@@ -1,7 +1,7 @@
 @media screen and ($mobile) {
   .component-6 {
     justify-content: center;
-    height: 902px;
+    height: 940px;
     
     > div {
       align-items: center;
@@ -30,6 +30,7 @@
       }
       > .info-container {
         row-gap: 36px;
+        margin-bottom: 38px;
         > .info {
           justify-content: center;
           align-items: center;
@@ -74,8 +75,8 @@
         border: none;
         background-color: $button-color;
         @include text-styles(13px, $white, normal,"Raleway",bold);
-        align-self: flex-start;
-        margin-left: 19px;
+        margin-right: 122px;
+        
       }
     }
     

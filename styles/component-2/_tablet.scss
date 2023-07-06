@@ -20,8 +20,8 @@
           margin-bottom: 6px;
         }
         > span:last-of-type {
-          @include text-styles(18.9px, $white, normal, "Raleway");
-          width: 700px;
+          @include text-styles(18.9px, $white, -0.2px, "Raleway");
+          width: 720px;
           margin-bottom: 36px;
           padding-right: 6px;
         }

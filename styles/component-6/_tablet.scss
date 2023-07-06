@@ -1,0 +1,102 @@
+@media screen and ($tablet) {
+  .component-6 {
+    justify-content: center;
+    height: 724px;
+
+    > div {
+      align-items: center;
+
+      > .header {
+        margin-bottom: 56px;
+        margin-top: 27px;
+
+        > span {
+          @include text-styles(29px, $black, normal, "Raleway", bold);
+        }
+        > div {
+          align-items: center;
+          padding-left: 17px;
+          padding-top: 13px;
+          > div {
+            @include width-height(35px, 1px);
+            background-color: $grey;
+            margin-right: 10px;
+          }
+          > img {
+            margin-right: 10px;
+          }
+        }
+      }
+      > .info-container {
+        width: 730px;
+        row-gap: 36px;
+        margin-bottom: 46px;
+        flex-direction: row;
+        justify-content: space-between;
+        > .info {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          > p {
+            @include text-styles(15px, $charcoal-gray, 0.6px, "Raleway");
+            line-height: 24px;
+            width: 150px;
+            margin-top: 15px;
+          }
+        }
+        > .info:nth-of-type(2) {
+          > .icon-placeholder {
+            padding-top: 8px;
+          }
+          > p {
+            margin-top: 20px;
+          }
+        }
+        > .info:nth-of-type(3) {
+          > p {
+            padding-left: 4px;
+            padding-top: 2px;
+          }
+        }
+      }
+      > .message {
+        display: grid;
+        grid-template-columns: repeat(2, 353px);
+        grid-template-rows: repeat(2, 46px) 171px;
+        column-gap: 10px;
+        row-gap: 14px;
+        margin-bottom: 15px;
+        padding-right: 2px;
+        > input {
+          border: 1px solid $border-color;
+          &::placeholder {
+            @include text-styles(14px, $charcoal-gray, normal, "Raleway");
+            padding-left: 8px;
+          }
+        }
+        > input:nth-of-type(3) {
+          grid-row-start: 2;
+          grid-column: 1/-1;
+        }
+        > input:last-of-type {
+          grid-row-start: 3;
+          grid-column: 1/-1;
+
+          position: relative;
+          &::placeholder {
+            position: absolute;
+            top: 16px;
+          }
+        }
+      }
+      > button {
+        width: 160px;
+        height: 43px;
+        border: none;
+        background-color: $button-color;
+        @include text-styles(13px, $white, normal, "Raleway", bold);
+        margin-right: 560px;
+      }
+    }
+  }
+}

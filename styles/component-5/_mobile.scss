@@ -80,11 +80,14 @@
             > div {
               text-align: center;
               > p:first-of-type {
+                >span{
+                  display: none
+                }
                 @include text-styles(14px, $white, normal, "Raleway", bold);
                 margin-bottom: 4px;
               }
               > p:last-of-type {
-                @include text-styles(11px, $button-color, 0.2px, "Raleway");
+                @include text-styles(10px, $button-color, 0.2px, "Raleway");
                 font-style: italic;
                 padding-left: 2px;
               }
