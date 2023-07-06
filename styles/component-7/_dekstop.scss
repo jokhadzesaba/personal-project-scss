@@ -1,0 +1,46 @@
+@media screen and ($desktop) {
+  .component-7 {
+    height: 298px;
+
+    > div {
+      > .logo {
+        height: 40px;
+        margin-top: 47px;
+        margin-left: 86px;
+        margin-bottom: 51px;
+
+        > div {
+          > img {
+            width: 26.5px;
+          }
+        }
+        > span {
+          @include text-styles(36px, $white, 0.6px, "Raleway", 100);
+          padding-top: 6px;
+        }
+      }
+      > .icon-container {
+        justify-content: center;
+        gap: 9px;
+        padding-right: 10px;
+        margin-bottom: 50px;
+        > div {
+          width: 40px;
+          height: 40px;
+          background-color: $icon-container;
+          justify-content: center;
+          align-items: center;
+        }
+        > div:nth-of-type(3) {
+          padding-left: 5px;
+        }
+      }
+      > .text-container {
+        > span {
+          @include text-styles(11px, $white, 0.2px, "Raleway");
+          padding-left: 36px;
+        }
+      }
+    }
+  }
+}

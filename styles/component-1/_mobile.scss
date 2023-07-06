@@ -1,7 +1,5 @@
 @media screen and ($mobile) {
   .component-1 {
-    justify-content: center;
-    background-color: $bg-color-black;
     height: 67px;
     > div:first-child {
       justify-content: space-between;
@@ -41,7 +39,7 @@
         }
       }
 
-      > .link-container {
+      > a {
         display: none;
       }
     }

@@ -1,8 +1,10 @@
 
 .component-1 {    
     background-color: $bg-color-black;
-    > div:first-child {
-      align-items: center;
-    }
+    justify-content: center;
+    
   }
+
+
+
 

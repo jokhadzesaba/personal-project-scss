@@ -1,163 +1,176 @@
 @media screen and ($desktop) {
-    .component-4 {
-      justify-content: center;
-      background-color: $black;
-      height: 1287px;
-      > div {
-        align-items: center;
-  
-        > .header {
-        //   margin-bottom: 66px;
-          margin-top: 72px;
-          > span {
-            @include text-styles(29px, $white, normal, "Raleway");
-          }
+  .component-4 {
+
+    height: 783px;
+    
+    > div {
+      align-items: center;
+
+      > .header {
+        margin-bottom: 150px;
+        margin-top: 140px;
+        > span {
+          @include text-styles(29px, $white, normal, "Raleway");
+        }
+        > div {
+          align-items: center;
+          padding-left: 17px;
+          padding-top: 4px;
           > div {
+            @include width-height(35px, 1px);
+            background-color: $grey;
+            margin-right: 9px;
+            margin-top: 2px;
+          }
+          > img {
+            width: 18px;
+            height: 18px;
+            padding-top: 4px;
+            margin-right: 7px;
+          }
+        }
+      }
+
+      > .hexagon-boxes {
+        flex-direction: row;
+        width: 1175px;
+        justify-content: space-between;
+        > .single-box {
+          align-items: center;
+          text-align: center;
+          > .hexagon {
+            width: 118px;
+            height: 137px;
+            position: relative;
+            justify-content: center;
             align-items: center;
-            padding-left: 17px;
-            padding-top: 10px;
-            > div {
-              @include width-height(35px, 1px);
-              background-color: $grey;
-              margin-right: 9px;
-              margin-top: 2px;
+            margin-bottom: 46px;
+            position: relative;
+            &:hover {
+              > .hover-hex {
+                position: absolute;
+                width: 125px;
+                height: 144px;
+                background-color: $button-color; // Replace with your desired color
+                z-index: 1;
+                // Clip-path properties to create a hexagon shape
+                clip-path: polygon(
+                  50% 0%,
+                  100% 25%,
+                  100% 75%,
+                  50% 100%,
+                  0% 75%,
+                  0% 25%
+                );
+                display: inline;
+              }
+              .line:nth-child(even) {
+                display: inline;
+                z-index: 3;
+              }
             }
-            > img {
-              width: 18px;
-              height: 18px;
-              padding-top: 4px;
-              margin-right: 7px;
+            > .image-placeholder {
+              z-index: 2;
+            }
+            > .hover-hex {
+              display: none;
+            }
+
+            > .line {
+              width: 72px;
+              background-color: $white;
+              height: 2px;
+              position: absolute;
+            }
+            > .line:nth-child(even) {
+              display: none;
+            }
+            > .inside {
+              width: 64px;
+              background-color: white;
+            }
+            > .line:nth-of-type(3) {
+              @include hexlines(90deg, -38px, 68px);
+            }
+            > .line:nth-of-type(4) {
+              @include hexlines(90deg, -28px, 68px);
+            }
+            > .line:nth-of-type(5) {
+              @include hexlines(150deg, -8px, 15px);
+            }
+            > .line:nth-of-type(6) {
+              @include hexlines(150deg, -1px, 20px);
+            }
+
+            > .line:nth-of-type(7) {
+              @include hexlines(30deg, 54px, 15px);
+            }
+            > .line:nth-of-type(8) {
+              @include hexlines(30deg, 55px, 20px);
+            }
+            .line:nth-of-type(9) {
+              @include hexlines(90deg, 84px, 68px);
+            }
+            .line:nth-of-type(10) {
+              @include hexlines(90deg, 83px, 68px);
+            }
+            .line:nth-of-type(11) {
+              @include hexlines(-30deg, 54px, 121px);
+            }
+            .line:nth-of-type(12) {
+              @include hexlines(-30deg, 56px, 116px);
+            }
+            .line:nth-of-type(13) {
+              @include hexlines(30deg, -8px, 121px);
+            }
+            .line:nth-of-type(14) {
+              @include hexlines(30deg, 0px, 116px);
+            }
+          }
+          > .text-container {
+            > p:first-of-type {
+              @include text-styles(
+                20px,
+                $button-color,
+                normal,
+                "Raleway",
+                bold
+              );
+              margin-bottom: 12px;
+            }
+            > p:last-of-type {
+              @include text-styles(14px, $white, 0.3px, "Open Sans");
+              line-height: 22px;
+              width: 300px;
             }
           }
         }
-  
-        > .hexagon-boxes {
-            flex-direction: row;
-          > .single-box {
-            align-items: center;
-            text-align: center;
-            > .hexagon {
-              width: 118px;
-              height: 137px;
-              position: relative;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: 46px;
-              position: relative;
-              &:hover {
-                > .hover-hex {
-                  position: absolute;
-                  width: 125px;
-                  height: 144px;
-                  background-color: $button-color; // Replace with your desired color
-                  z-index: 1;
-                  // Clip-path properties to create a hexagon shape
-                  clip-path: polygon(
-                    50% 0%,
-                    100% 25%,
-                    100% 75%,
-                    50% 100%,
-                    0% 75%,
-                    0% 25%
-                  );
-                  display: inline;
-                }
-                .line:nth-child(even) {
-                  display: inline;
-                  z-index: 3;
-                }
-              }
-              > .image-placeholder {
-                z-index: 2;
-              }
-              > .hover-hex {
-                display: none;
-              }
-  
-  
-              > .line {
-                width: 72px;
-                background-color: $white;
-                height: 2px;
-                position: absolute;
-              }
-              > .line:nth-child(even) {
-                display: none;
-              }
-              > .inside {
-                width: 64px;
-                background-color: white;
-              }
-              > .line:nth-of-type(3) {
-                @include hexlines(90deg, -38px, 68px);
-              }
-              > .line:nth-of-type(4) {
-                @include hexlines(90deg, -28px, 68px);
-              }
-              > .line:nth-of-type(5) {
-                @include hexlines(150deg, -8px, 15px);
-              }
-              > .line:nth-of-type(6) {
-                @include hexlines(150deg, -1px, 20px);
-              }
-  
-              > .line:nth-of-type(7) {
-                @include hexlines(30deg, 54px, 15px);
-              }
-              > .line:nth-of-type(8) {
-                @include hexlines(30deg, 55px, 20px);
-              }
-              .line:nth-of-type(9) {
-                @include hexlines(90deg, 84px, 68px);
-              }
-              .line:nth-of-type(10) {
-                @include hexlines(90deg, 83px, 68px);
-              }
-              .line:nth-of-type(11) {
-                @include hexlines(-30deg, 54px, 121px);
-              }
-              .line:nth-of-type(12) {
-                @include hexlines(-30deg, 56px, 116px);
-              }
-              .line:nth-of-type(13) {
-                @include hexlines(30deg, -8px, 121px);
-              }
-              .line:nth-of-type(14) {
-                @include hexlines(30deg, 0px, 116px);
-              }
-            }
-            > .text-container {
-              > p:first-of-type {
-                @include text-styles(20px, $button-color, normal, "Raleway", bold);
-                margin-bottom: 12px;
-              }
-              > p:last-of-type {
-                @include text-styles(14px, $white, 0.3px, "Open Sans");
-                line-height: 22px;
-                width: 300px;
-              }
+        > .single-box:nth-of-type(2) {
+          > .text-container {
+            > p:first-of-type {
+              letter-spacing: 0.4px;
+              margin-bottom: 12px;
             }
           }
-          > .single-box:nth-of-type(2) {
-            
-            > .text-container {
-              > p:first-of-type {
-                letter-spacing: 0.4px;
-                margin-bottom: 12px;
-              }
-            }
-          }
-          > .single-box:nth-of-type(3) {
-            
-            > .text-container {
-              > p:first-of-type {
-                letter-spacing: 0.2px;
-                margin-bottom: 12px;
-              }
+        }
+        > .single-box:nth-of-type(3) {
+          > .text-container {
+            > p:first-of-type {
+              letter-spacing: 0.2px;
+              margin-bottom: 12px;
             }
           }
         }
       }
     }
   }
-  
+}
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .component-4 {
+    > div {
+      > .hexagon-boxes {
+        width: 950px;
+      }
+    }
+  }
+}

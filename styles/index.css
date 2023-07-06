@@ -12,45 +12,40 @@
   flex-direction: column;
 }
 
-.container {
+body {
   width: 100%;
 }
 
 .component-1 {
   background-color: #0E0E0E;
-}
-.component-1 > div:first-child {
-  align-items: center;
+  justify-content: center;
 }
 
 @media screen and ((min-width: 1024px)) {
   .component-1 {
     height: 102.4px;
-    width: 100%;
-  }
-  .component-1 > div:first-child {
-    width: 61%;
-  }
-  .component-1 > div:first-child > .image-placeholder {
     align-items: center;
+  }
+  .component-1 > div {
+    align-items: center;
+    column-gap: 40px;
+    width: 1164px;
+  }
+  .component-1 > div > .image-placeholder > span {
     font-size: 36px;
     color: #ffffff;
     letter-spacing: 0.3px;
     font-family: "Raleway";
     font-weight: normal;
-    margin-right: 19.8%;
+    width: 130px;
   }
-  .component-1 > div:first-child > .image-placeholder > span {
-    width: 200px;
-  }
-  .component-1 > div:first-child > .image-placeholder > div {
+  .component-1 > div > .image-placeholder > div {
     display: none;
   }
-  .component-1 > div:first-child > .link-container {
-    column-gap: 8.7%;
-    padding-bottom: 1px;
+  .component-1 > div > a:first-of-type {
+    margin-left: 22.4%;
   }
-  .component-1 > div:first-child > .link-container > a {
+  .component-1 > div > a {
     font-size: 14px;
     color: #ffffff;
     letter-spacing: normal;
@@ -59,9 +54,19 @@
     text-decoration: none;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1186px) {
+  .component-1 > div {
+    column-gap: 30px;
+  }
+  .component-1 > div > .image-placeholder {
+    margin-left: 30px;
+  }
+  .component-1 > div > a:first-of-type {
+    margin-left: 15%;
+  }
+}
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
   .component-1 {
-    justify-content: center;
     height: 108px;
   }
   .component-1 > div:first-child {
@@ -108,14 +113,12 @@
     height: 2px;
     background-color: #ffffff;
   }
-  .component-1 > div:first-child > .link-container {
+  .component-1 > div:first-child > a {
     display: none;
   }
 }
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-1 {
-    justify-content: center;
-    background-color: #0E0E0E;
     height: 67px;
   }
   .component-1 > div:first-child {
@@ -160,17 +163,19 @@
     height: 2px;
     background-color: #ffffff;
   }
-  .component-1 > div:first-child > .link-container {
+  .component-1 > div:first-child > a {
     display: none;
   }
 }
+.component-2 {
+  background-color: #292929;
+  justify-content: center;
+}
+
 @media screen and ((min-width: 1024px)) {
   .component-2 {
-    background-color: #292929;
-    justify-content: center;
     align-items: center;
     height: 759px;
-    width: 100%;
   }
   .component-2 > div {
     height: 259px;
@@ -229,8 +234,6 @@
 }
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
   .component-2 {
-    background-color: #292929;
-    justify-content: center;
     align-items: center;
     height: 592px;
   }
@@ -291,8 +294,6 @@
 }
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-2 {
-    background-color: #292929;
-    justify-content: center;
     height: 212.4px;
   }
   .component-2 > div {
@@ -353,18 +354,22 @@
     padding-left: 5px;
   }
 }
+.component-3 {
+  justify-content: center;
+}
+
 @media screen and ((min-width: 1024px)) {
   .component-3 {
-    justify-content: center;
     height: 816px;
-    width: 100%;
   }
   .component-3 > div {
     align-items: center;
+    margin-right: 113px;
   }
   .component-3 > div > .header {
     margin-bottom: 93px;
     margin-top: 113px;
+    padding-left: 112px;
   }
   .component-3 > div > .header > span {
     font-size: 31px;
@@ -398,9 +403,6 @@
   }
   .component-3 > div > .img-and-text > .image-placeholder {
     padding-top: 5px;
-  }
-  .component-3 > div > .img-and-text > .text-container {
-    width: 725px;
   }
   .component-3 > div > .img-and-text > .text-container > button {
     display: none;
@@ -478,9 +480,22 @@
     padding-left: 4px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1186px) {
+  .component-3 > div {
+    justify-content: flex-end;
+  }
+  .component-3 > div > .img-and-text {
+    gap: 10px;
+    padding: 0;
+  }
+  .component-3 > div > .img-and-text > .image-placeholder img {
+    width: 400px;
+    height: 400px;
+    margin-left: 110px;
+  }
+}
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
   .component-3 {
-    justify-content: center;
     height: 1146px;
   }
   .component-3 > div {
@@ -595,7 +610,6 @@
 }
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-3 {
-    justify-content: center;
     height: 799px;
   }
   .component-3 > div {
@@ -706,17 +720,21 @@
     line-height: 24px;
   }
 }
+.component-4 {
+  justify-content: center;
+  background-color: #0E0E0E;
+}
+
 @media screen and ((min-width: 1024px)) {
   .component-4 {
-    justify-content: center;
-    background-color: #0E0E0E;
-    height: 1287px;
+    height: 783px;
   }
   .component-4 > div {
     align-items: center;
   }
   .component-4 > div > .header {
-    margin-top: 72px;
+    margin-bottom: 150px;
+    margin-top: 140px;
   }
   .component-4 > div > .header > span {
     font-size: 29px;
@@ -728,7 +746,7 @@
   .component-4 > div > .header > div {
     align-items: center;
     padding-left: 17px;
-    padding-top: 10px;
+    padding-top: 4px;
   }
   .component-4 > div > .header > div > div {
     width: 35px;
@@ -745,6 +763,8 @@
   }
   .component-4 > div > .hexagon-boxes {
     flex-direction: row;
+    width: 1175px;
+    justify-content: space-between;
   }
   .component-4 > div > .hexagon-boxes > .single-box {
     align-items: center;
@@ -877,10 +897,13 @@
     margin-bottom: 12px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+  .component-4 > div > .hexagon-boxes {
+    width: 950px;
+  }
+}
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
   .component-4 {
-    justify-content: center;
-    background-color: #0E0E0E;
     height: 1287px;
   }
   .component-4 > div {
@@ -1054,8 +1077,6 @@
 }
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-4 {
-    justify-content: center;
-    background-color: #0E0E0E;
     height: 1108px;
   }
   .component-4 > div {
@@ -1222,6 +1243,122 @@
   .component-4 > div > .hexagon-boxes > .single-box:nth-of-type(3) > .text-container > p:first-of-type {
     letter-spacing: 0.4px;
     margin-bottom: 16px;
+  }
+}
+@media screen and ((min-width: 1024px)) {
+  .component-5 {
+    height: 1060px;
+  }
+  .component-5 > div {
+    width: 100%;
+    align-items: center;
+  }
+  .component-5 > div > .header {
+    margin-bottom: 84px;
+    margin-top: 107px;
+  }
+  .component-5 > div > .header > span {
+    font-size: 31px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-5 > div > .header > div {
+    align-items: center;
+    padding-left: 33px;
+    padding-top: 9px;
+  }
+  .component-5 > div > .header > div > div {
+    width: 37px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  .component-5 > div > .header > div > img {
+    margin-right: 9px;
+  }
+  .component-5 > div > .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 379px);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7px;
+  }
+  .component-5 > div > .grid-container > div:first-child {
+    grid-column: 1/span 2;
+  }
+  .component-5 > div > .grid-container > div:nth-child(3) {
+    grid-column: 4/-1;
+  }
+  .component-5 > div > .grid-container > div:nth-child(5) {
+    grid-column: 2/span 2;
+  }
+  .component-5 > div > .grid-container > div {
+    background-color: #0E0E0E;
+  }
+  .component-5 > div > .grid-container > div:hover > div:first-child {
+    display: flex;
+  }
+  .component-5 > div > .grid-container > div:hover > div:first-child > .icon-container > div:hover {
+    background-color: inherit;
+    border: 2px solid #3AB6B2;
+  }
+  .component-5 > div > .grid-container > div:hover > .text-container {
+    display: flex;
+  }
+  .component-5 > div > .grid-container > div > div:first-child {
+    display: none;
+    height: 303px;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+  }
+  .component-5 > div > .grid-container > div > div:first-child .icon-container {
+    gap: 10px;
+    padding-right: 18px;
+    padding-top: 62px;
+  }
+  .component-5 > div > .grid-container > div > div:first-child .icon-container > div {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #3AB6B2;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-5 > div > .grid-container > div > div:first-child .icon-container > div:nth-child(odd) {
+    display: none;
+  }
+  .component-5 > div > .grid-container > div > .text-container {
+    display: none;
+    height: 54px;
+    background-color: #0E0E0E;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-5 > div > .grid-container > div > .text-container > div {
+    text-align: center;
+  }
+  .component-5 > div > .grid-container > div > .text-container > div > p:first-of-type {
+    font-size: 17px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+    padding-top: 18px;
+    padding-right: 6px;
+  }
+  .component-5 > div > .grid-container > div > .text-container > div > p:last-of-type {
+    font-size: 13px;
+    color: #3AB6B2;
+    letter-spacing: 0.2px;
+    font-family: "Raleway";
+    font-weight: normal;
+    font-style: italic;
+    padding-right: 4px;
+    margin-top: 6px;
   }
 }
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
@@ -1437,9 +1574,131 @@
     padding-left: 2px;
   }
 }
+.component-6 {
+  justify-content: center;
+}
+
+@media screen and ((min-width: 1024px)) {
+  .component-6 {
+    height: 852px;
+  }
+  .component-6 > div {
+    align-items: center;
+  }
+  .component-6 > div > .header {
+    margin-bottom: 88px;
+    margin-top: 48px;
+  }
+  .component-6 > div > .header > span {
+    font-size: 31px;
+    color: #0E0E0E;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  .component-6 > div > .header > div {
+    align-items: center;
+    padding-left: 17px;
+    padding-top: 11px;
+  }
+  .component-6 > div > .header > div > div {
+    width: 37px;
+    height: 1px;
+    background-color: #D3D3D3;
+    margin-right: 10px;
+  }
+  .component-6 > div > .header > div > img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .component-6 > div > .info-container {
+    width: 778px;
+    margin-bottom: 81px;
+    flex-direction: row;
+  }
+  .component-6 > div > .info-container > .info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 164px;
+  }
+  .component-6 > div > .info-container > .info > .icon-placeholder > img {
+    padding-right: 4px;
+  }
+  .component-6 > div > .info-container > .info > p {
+    font-size: 15px;
+    color: #525252;
+    letter-spacing: 0.6px;
+    font-family: "Raleway";
+    font-weight: normal;
+    line-height: 24px;
+    width: 150px;
+    margin-top: 15px;
+  }
+  .component-6 > div > .info-container > .info:nth-of-type(2) {
+    margin-right: 158px;
+  }
+  .component-6 > div > .info-container > .info:nth-of-type(2) > .icon-placeholder {
+    padding-top: 8px;
+  }
+  .component-6 > div > .info-container > .info:nth-of-type(2) > p {
+    margin-top: 20px;
+  }
+  .component-6 > div > .info-container > .info:nth-of-type(3) > .icon-placeholder > img {
+    padding-right: 22px;
+  }
+  .component-6 > div > .info-container > .info:nth-of-type(3) > p {
+    padding-right: 18px;
+    padding-top: 2px;
+  }
+  .component-6 > div > .message {
+    display: grid;
+    grid-template-columns: repeat(2, 464px);
+    grid-template-rows: repeat(2, 46px) 171px;
+    column-gap: 14px;
+    row-gap: 14px;
+    margin-bottom: 15px;
+  }
+  .component-6 > div > .message > input {
+    border: 1px solid #D4D4D4;
+  }
+  .component-6 > div > .message > input::placeholder {
+    font-size: 14px;
+    color: #525252;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: normal;
+    padding-left: 8px;
+  }
+  .component-6 > div > .message > input:nth-of-type(3) {
+    grid-row-start: 2;
+    grid-column: 1/-1;
+  }
+  .component-6 > div > .message > input:last-of-type {
+    grid-row-start: 3;
+    grid-column: 1/-1;
+    position: relative;
+  }
+  .component-6 > div > .message > input:last-of-type::placeholder {
+    position: absolute;
+    top: 16px;
+  }
+  .component-6 > div > button {
+    width: 160px;
+    height: 43px;
+    border: none;
+    background-color: #3AB6B2;
+    font-size: 13px;
+    color: #ffffff;
+    letter-spacing: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+    margin-right: 788px;
+  }
+}
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
   .component-6 {
-    justify-content: center;
     height: 724px;
   }
   .component-6 > div {
@@ -1550,7 +1809,6 @@
 }
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-6 {
-    justify-content: center;
     height: 940px;
   }
   .component-6 > div {
@@ -1642,11 +1900,60 @@
     margin-right: 122px;
   }
 }
+.component-7 {
+  background-color: #111111;
+  justify-content: center;
+}
+
+@media screen and ((min-width: 1024px)) {
+  .component-7 {
+    height: 298px;
+  }
+  .component-7 > div > .logo {
+    height: 40px;
+    margin-top: 47px;
+    margin-left: 86px;
+    margin-bottom: 51px;
+  }
+  .component-7 > div > .logo > div > img {
+    width: 26.5px;
+  }
+  .component-7 > div > .logo > span {
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 0.6px;
+    font-family: "Raleway";
+    font-weight: 100;
+    padding-top: 6px;
+  }
+  .component-7 > div > .icon-container {
+    justify-content: center;
+    gap: 9px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+  }
+  .component-7 > div > .icon-container > div {
+    width: 40px;
+    height: 40px;
+    background-color: #252525;
+    justify-content: center;
+    align-items: center;
+  }
+  .component-7 > div > .icon-container > div:nth-of-type(3) {
+    padding-left: 5px;
+  }
+  .component-7 > div > .text-container > span {
+    font-size: 11px;
+    color: #ffffff;
+    letter-spacing: 0.2px;
+    font-family: "Raleway";
+    font-weight: normal;
+    padding-left: 36px;
+  }
+}
 @media screen and ((min-width: 768px) and (max-width: 1023px)) {
   .component-7 {
     height: 298px;
-    background-color: #111111;
-    justify-content: center;
   }
   .component-7 > div > .logo {
     height: 40px;
@@ -1693,8 +2000,6 @@
 @media screen and ((min-width: 320px) and (max-width: 767px)) {
   .component-7 {
     height: 312px;
-    background-color: #111111;
-    justify-content: center;
   }
   .component-7 > div > .logo {
     height: 40px;

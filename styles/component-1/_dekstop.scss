@@ -1,29 +1,43 @@
 @media screen and ($desktop) {
   .component-1 {
     height: 102.4px;
-    width: 100%;
-    > div:first-child {
-      width: 61%;
-      
-      > .image-placeholder {
+    
 
-        align-items: center;
-        @include text-styles(36px, $white, 0.3px, "Raleway");
-        margin-right: 19.8%;
-        >span{
-          width: 200px;
+    align-items: center;
+    > div {
+      align-items: center;
+      column-gap: 40px;
+      width: 1164px;
+
+      > .image-placeholder {
+        > span {
+          @include text-styles(36px, $white, 0.3px, "Raleway");
+          width: 130px;
         }
+
         > div {
           display: none;
         }
       }
-      > .link-container {
-        column-gap: 8.7%;
-        padding-bottom: 1px;
-        > a {
-          @include text-styles(14px, $white, normal, "Open Sans");
-          text-decoration: none;
-        }
+      > a:first-of-type {
+        margin-left: 22.4%;
+      }
+      > a {
+        @include text-styles(14px, $white, normal, "Open Sans");
+        text-decoration: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1186px) {
+  .component-1 {
+    > div {
+      column-gap: 30px;
+      > .image-placeholder {
+        margin-left: 30px;
+      }
+      > a:first-of-type {
+        margin-left: 15%;
       }
     }
   }

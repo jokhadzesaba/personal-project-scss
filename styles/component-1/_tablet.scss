@@ -1,6 +1,5 @@
 @media screen and ($tablet) {
   .component-1 {
-    justify-content: center;
     height: 108px;
     > div:first-child {
       justify-content: space-between;
@@ -38,7 +37,7 @@
           }
         }
       }
-      > .link-container {
+      > a {
         display: none;
       }
     }
